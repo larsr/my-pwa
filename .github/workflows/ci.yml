@@ -14,7 +14,7 @@ jobs:
       - name: Prepare dist
         run: |
           mkdir -p dist
-          cp launch.html dist/index.html
+          cp landing.html dist/index.html
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
