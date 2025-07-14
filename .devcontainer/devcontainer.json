@@ -1,14 +1,9 @@
 {
-  "name": "Svelte PWA Dev",
+  "name": "Minimal PWA Dev",
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "postCreateCommand": "bun install || true",
   "features": {
     "ghcr.io/devcontainers/features/git:1": {}
-  },
-  "workspaceFolder": "/workspace",
-  "mounts": [
-    "source=${localWorkspaceFolder},target=/workspace,type=bind"
-  ]
+  }
 }

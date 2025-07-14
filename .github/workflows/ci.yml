@@ -1,4 +1,4 @@
-name: Deploy static landing to GitHub Pages
+name: Deploy launch.html to GitHub Pages
 
 on:
   push:
@@ -11,12 +11,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
       - name: Prepare dist
         run: |
           mkdir -p dist
-          cp landing.html dist/index.html
-
+          cp launch.html dist/index.html
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
